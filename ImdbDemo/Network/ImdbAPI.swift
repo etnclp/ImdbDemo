@@ -9,7 +9,7 @@
 import Moya
 
 enum ImdbAPI {
-    case search
+    case search(searchText: String)
 }
 
 extension ImdbAPI: TargetType {
@@ -49,7 +49,13 @@ extension ImdbAPI: TargetType {
     }
     
     var parameters: [String : Any] {
-        return [:]
+        switch self {
+        case .search(let text):
+            var params: [String : Any] = [:]
+            params["apikey"] = ApiConstants.API_KEY
+            params["s"] = text
+            return params
+        }
     }
     
 }
