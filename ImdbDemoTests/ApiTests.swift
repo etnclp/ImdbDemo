@@ -14,7 +14,7 @@ import Moya
 class ApiTests: QuickSpec {
     
     override func spec() {
-        describe("Provider test 1") {
+        describe("Provider test json") {
             var provider: MoyaProvider<ImdbAPI>!
             
             beforeEach {
@@ -24,7 +24,7 @@ class ApiTests: QuickSpec {
             it("emits a Response object") {
                 var called = false
                 
-                _ = provider.rx.request(.search)
+                _ = provider.rx.request(.search(searchText: ""))
                     .subscribe { event in
                         switch event {
                         case .success(let response):
@@ -42,7 +42,7 @@ class ApiTests: QuickSpec {
     
     func customEndpointClosure(_ target: ImdbAPI) -> Endpoint {
         return Endpoint(url: URL(target: target).absoluteString,
-                        sampleResponseClosure: { .networkResponse(500, target.testSampleData) },
+                        sampleResponseClosure: { .networkResponse(200, target.testSampleData) },
                         method: target.method,
                         task: target.task,
                         httpHeaderFields: target.headers)
