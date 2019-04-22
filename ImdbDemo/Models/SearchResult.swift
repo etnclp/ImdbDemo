@@ -1,0 +1,34 @@
+//
+//  SearchResult.swift
+//  ImdbDemo
+//
+//  Created by Erdi Tunçalp on 22.04.2019.
+//  Copyright © 2019 Erdi Tunçalp. All rights reserved.
+//
+
+import Foundation
+
+struct SearchResult: Codable {
+    let search: [Search]
+    let totalResults, response: String
+    
+    enum CodingKeys: String, CodingKey {
+        case search = "Search"
+        case totalResults
+        case response = "Response"
+    }
+}
+
+struct Search: Codable {
+    let title, year, imdbID: String
+    let type: ContentType
+    let poster: String
+    
+    enum CodingKeys: String, CodingKey {
+        case title = "Title"
+        case year = "Year"
+        case imdbID
+        case type = "Type"
+        case poster = "Poster"
+    }
+}

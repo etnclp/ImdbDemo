@@ -10,7 +10,7 @@ import XCoordinator
 
 enum AppRoute: Route {
     case filter
-    case movies
+    case movies(filter: Filter)
 }
 
 class AppCoordinator: NavigationCoordinator<AppRoute> {
@@ -25,10 +25,12 @@ class AppCoordinator: NavigationCoordinator<AppRoute> {
         switch route {
         case .filter:
             let filter = FilterViewController()
-            return .present(filter)
-        case .movies:
+            filter.bind(to: FilterViewModelImpl(router: anyRouter))
+            return .push(filter)
+        case .movies(let filter):
             let movies = MoviesViewController()
-            return .present(movies)
+            movies.bind(to: MoviesViewModelImpl(router: anyRouter, filter: filter))
+            return .push(movies)
         }
     }
     

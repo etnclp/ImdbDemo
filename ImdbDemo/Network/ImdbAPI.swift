@@ -9,7 +9,7 @@
 import Moya
 
 enum ImdbAPI {
-    case search(searchText: String)
+    case search(filter: Filter, page: Int)
 }
 
 extension ImdbAPI: TargetType {
@@ -50,10 +50,10 @@ extension ImdbAPI: TargetType {
     
     var parameters: [String : Any] {
         switch self {
-        case .search(let text):
-            var params: [String : Any] = [:]
+        case .search(let filter, let page):
+            var params = filter.dictionary ?? [:]
             params["apikey"] = ApiConstants.API_KEY
-            params["s"] = text
+            params["page"] = page
             return params
         }
     }
