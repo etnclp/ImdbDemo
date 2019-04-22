@@ -8,6 +8,7 @@
 
 import UIKit
 import XCGLogger
+import IQKeyboardManagerSwift
 
 let log = XCGLogger.default
 
@@ -22,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         let router = AppCoordinator().anyRouter
         router.setRoot(for: window!)
+        
+        IQKeyboardManager.shared.enable = true
         
         return true
     }
