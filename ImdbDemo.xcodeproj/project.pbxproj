@@ -22,6 +22,7 @@
 		FD22EFD5226E38CB001BE27D /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD22EFD4226E38CB001BE27D /* FilterViewModel.swift */; };
 		FD22EFD7226E38F2001BE27D /* FilterViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD22EFD6226E38F2001BE27D /* FilterViewModelImpl.swift */; };
 		FD22EFD9226E3AF0001BE27D /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD22EFD8226E3AF0001BE27D /* BindableType.swift */; };
+		FD22EFDB226E5A04001BE27D /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD22EFDA226E5A04001BE27D /* Filter.swift */; };
 		FD8BF852226E1A4E00EA12D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BF851226E1A4E00EA12D9 /* AppDelegate.swift */; };
 		FD8BF859226E1A5000EA12D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD8BF858226E1A5000EA12D9 /* Assets.xcassets */; };
 		FD8BF85C226E1A5000EA12D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD8BF85A226E1A5000EA12D9 /* LaunchScreen.storyboard */; };
@@ -68,6 +69,7 @@
 		FD22EFD4226E38CB001BE27D /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
 		FD22EFD6226E38F2001BE27D /* FilterViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModelImpl.swift; sourceTree = "<group>"; };
 		FD22EFD8226E3AF0001BE27D /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
+		FD22EFDA226E5A04001BE27D /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		FD8BF84E226E1A4E00EA12D9 /* ImdbDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImdbDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8BF851226E1A4E00EA12D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD8BF858226E1A5000EA12D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		FD22EFB8226E2192001BE27D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FD22EFDA226E5A04001BE27D /* Filter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -601,6 +604,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD22EFD7226E38F2001BE27D /* FilterViewModelImpl.swift in Sources */,
+				FD22EFDB226E5A04001BE27D /* Filter.swift in Sources */,
 				FD22EFD9226E3AF0001BE27D /* BindableType.swift in Sources */,
 				FD22EFD5226E38CB001BE27D /* FilterViewModel.swift in Sources */,
 				FD22EFC0226E22EF001BE27D /* FilterViewController.swift in Sources */,
