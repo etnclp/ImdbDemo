@@ -3,6 +3,7 @@ PODS:
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - Alamofire (4.8.2)
+  - IQKeyboardManagerSwift (6.2.0)
   - Kingfisher (4.10.1)
   - Moya/Core (12.0.1):
     - Alamofire (~> 4.1)
@@ -30,6 +31,7 @@ PODS:
 
 DEPENDENCIES:
   - Action (= 3.11.0)
+  - IQKeyboardManagerSwift (= 6.2.0)
   - Kingfisher (= 4.10.1)
   - Moya/RxSwift (= 12.0.1)
   - Nimble (= 8.0.1)
@@ -42,6 +44,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Action
     - Alamofire
+    - IQKeyboardManagerSwift
     - Kingfisher
     - Moya
     - Nimble
@@ -56,6 +59,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Action: 689181e4c3f6566844178d8a7da6fef39a9597fc
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
   Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
@@ -67,6 +71,6 @@ SPEC CHECKSUMS:
   XCGLogger: 7f7f43f15dfe3a305fa1342b7dc29af656289abd
   XCoordinator: 9083911c1b8a84f24447a5fa81da87c319294e5b
 
-PODFILE CHECKSUM: 57388be03b45f97f15791cc6d26f3f383f703894
+PODFILE CHECKSUM: 16853c3a92349169ce29afaa46989106efd7b48d
 
 COCOAPODS: 1.5.3
